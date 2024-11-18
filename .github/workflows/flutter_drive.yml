@@ -92,7 +92,7 @@ jobs:
         with:
           os: iOS
           os_version: 18.1
-          model: "iPhone 16"
+          model: "iPhone 15"
       - name: Run Flutter Integration tests
         working-directory: flutter_secure_storage/example
         run: flutter test integration_test
