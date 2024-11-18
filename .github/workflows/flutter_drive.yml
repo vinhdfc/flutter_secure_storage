@@ -80,7 +80,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-          flutter-version: 3.22.x
+          flutter-version: 3.24.x
       - name: Install melos
         run: |
           flutter pub global activate melos
@@ -91,8 +91,8 @@ jobs:
       - uses: futureware-tech/simulator-action@v4
         with:
           os: iOS
-          os_version: 17.5
-          model: "iPhone 15"
+          os_version: 18.1
+          model: "iPhone 16"
       - name: Run Flutter Integration tests
         working-directory: flutter_secure_storage/example
         run: flutter test integration_test
