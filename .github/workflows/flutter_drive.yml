@@ -88,7 +88,7 @@ jobs:
           echo "$HOME/AppData/Local/Pub/Cache/bin" >> $GITHUB_PATH
       - name: Initialize workspace through melos
         run: melos bootstrap
-      - uses: futureware-tech/simulator-action@v3
+      - uses: futureware-tech/simulator-action@v4
         with:
           os: iOS
           os_version: 17.5
