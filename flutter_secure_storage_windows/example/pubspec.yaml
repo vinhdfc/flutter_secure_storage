@@ -3,20 +3,23 @@ description: Demonstrates how to use the flutter_secure_storage_windows plugin.
 publish_to: 'none'
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
-  flutter: ">=2.0.0"
+  sdk: '>=2.17.0 <4.0.0' # Updated to support null safety and Dart 3.x
+  flutter: ">=3.0.0"     # Updated for Flutter 3.x compatibility
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_secure_storage_platform_interface:
+  flutter_secure_storage_platform_interface: # Ensure this is up-to-date
+    git:
+      url: https://github.com/mogol/flutter_secure_storage.git
+      path: flutter_secure_storage_platform_interface
   flutter_secure_storage_windows:
     path: ../
-  path: ^1.8.0
-  path_provider: ^2.0.0
+  path: ^1.8.3 # Ensure this is the latest compatible version
+  path_provider: ^2.0.11 # Updated to the latest compatible version
 
 dev_dependencies:
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.1 # Ensure this aligns with Flutter SDK version
   flutter_test:
     sdk: flutter
   integration_test:
